@@ -1,0 +1,67 @@
+{
+    "env": {
+        "jest/globals": true,
+        "react-native/react-native": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "standard",
+        "plugin:react/recommended",
+        "prettier",
+        "prettier/standard"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true,
+            "modules": true
+        },
+        "ecmaVersion": 7,
+        "sourceType": "module"
+    },
+    "plugins": ["babel", "react", "react-native", "react-hooks", "jest"],
+    "rules": {
+        "arrow-parens": ["error", "always"],
+        "camelcase": "error",
+        "curly": ["error", "all"],
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "warn",
+        "jest/no-identical-title": "warn",
+        "jest/valid-expect": "warn",
+        "max-len": [
+            "error",
+            {
+                "code": 140,
+                "ignoreUrls": true
+            }
+        ],
+        "multiline-comment-style": ["error", "starred-block"],
+        "no-confusing-arrow": "error",
+        "no-console": "error",
+        "no-undefined": "error",
+        "no-var": "error",
+        "react-hooks/exhaustive-deps": "error",
+        "react-hooks/rules-of-hooks": "error",
+        "react-native/no-unused-styles": "error",
+        "react-native/split-platform-components": "error",
+        "react/display-name": ["off"],
+        "react/jsx-curly-brace-presence": ["error", "never"],
+        "react/jsx-uses-react": "warn",
+        "react/jsx-uses-vars": "error",
+        "react/no-unused-prop-types": "error",
+        "react/prop-types": [
+            "error",
+            {
+                "skipUndeclared": true
+            }
+        ],
+        "react/require-default-props": "error"
+    },
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "16.8"
+        }
+    }
+}
