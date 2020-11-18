@@ -86,7 +86,7 @@
         "prettier": "^1.18.2",
         "react": "^16.3.0",
         "react-native": "^0.61.1",
-        "semantic-release": "^15.13.24"
+        "semantic-release": "^17.2.3"
     },
     "dependencies": {},
     "peerDependencies": {
